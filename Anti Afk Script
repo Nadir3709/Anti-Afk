@@ -1,5 +1,6 @@
 local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/miroeramaa/TurtleLib/main/TurtleUiLib.lua"))()
 local window = library:Window("Anti Afk | By Nadir")
+
 window:Button("Anti Afk (Click)", function()
     local vu = game:GetService("VirtualUser")
 game:GetService("Players").LocalPlayer.Idled:connect(function()
@@ -9,3 +10,7 @@ vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
    print("pressed button")
 end)
+
+library:Keybind("RightControl")
+
+window:Label("RightControl Close / Open Gui", Color3.fromRGB(127, 143, 166))

@@ -11,7 +11,16 @@ end)
    print("Anti Afk Clicked")
 end)
 
+window:Label("===========================", Color3.fromRGB(127, 143, 166))
+
 window:Button("Close (Execute Again To Open)", function()
+    local CoreGui = game:GetService("StarterGui")
+
+CoreGui:SetCore("SendNotification", {
+	Title = "NOTIF";
+	Text = "Execute Again If You Want Open The GUI";
+	Duration = 10;
+})
     library:Destroy()
-   print("pressed button")
+   print("Close")
 end)

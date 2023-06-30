@@ -4,5 +4,17 @@ vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 wait(1)
 vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
-print("Anti Afk Always Active")
--- Open Source
+wait(1)
+local NofiticationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Notification/main/NotificationHolder"))()
+local Nofitication = loadstring(game:HttpGet("https://raw.githubusercontent.com/Nadir3709/Notification/main/Notification"))()
+
+local function Notify(Title, Text, Time)
+    Nofitication:Notify(
+        {Title = Title, Description = Text},
+        {OutlineColor = Color3.fromRGB(100, 100, 100),Time = Time or 20, Type = "default"} --[[default, option, image]]
+    )
+end
+
+Notify("Notification", "Anti Afk Actived!")
+
+-- OPEN SOURCE

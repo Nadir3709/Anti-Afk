@@ -4,10 +4,3 @@ vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 wait(1)
 vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
 end)
-wait(1)
-WindUI:Notify({
-    Title = "Skedz Hub",
-    Content = "Anti-AFK automatically actived.",
-    Icon = "keyboard-off",
-    Duration = 3,
-})
